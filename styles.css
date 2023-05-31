@@ -1,0 +1,64 @@
+/* Estilos para las imágenes */
+.img {
+  max-width: 99%;
+  max-height: 99%;
+}
+
+/* Estilos para el contenedor del slider de imágenes */
+.image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+}
+
+/* Estilos para los botones "anterior" y "siguiente" */
+.button-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 60px;
+}
+.button-slider:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#prev-button {
+  left: 0;
+}
+#next-button {
+  right: 0;
+}
+
+/* Estilos para el contenedor de la galería de imágenes */
+.gallery-container {
+  display: none;
+}
+
+/* Estilos para el botón para alternar entre la vista de galería y la vista de slider */
+#toggle-view-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+#toggle-view-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .img-container {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
